@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gửi Tin Nhắn Riêng | Huỳnh Minh Thắng</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJz9At7gU/w+H5j3U1c5J7L0p8eM6D2d5X3Xw4/kH1B6pP58mIeA+6jL5s5eA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+</head>
+
+<body>
+
+
+
+    
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Huỳnh Minh Thắng</h1>
+            
+            <button class="hamburger-menu-btn" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="navbar main-nav">
+                <ul>
+                     <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="skills.html">Kỹ năng</a></li>
+          <li><a href="projects.html" class="active">Dự án</a></li>
+          <li><a href="message.html">Liên hệ</a></li>
+          <li><a href="https://www.facebook.com/share/1ELnVmzMZM/">Mạng xã Hội</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section message-page">
+        <div class="container">
+            <h2 class="section-title">Gửi Tin Nhắn Riêng</h2>
+            <p class="section-subtitle">Hãy điền vào mẫu dưới đây nếu bạn muốn thảo luận riêng tư về một dự án hoặc cơ hội công việc. Tôi sẽ phản hồi sớm nhất có thể!</p>
+
+            <div class="message-form-container">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Tên của bạn:</label>
+                        <input type="text" id="name" name="name" placeholder="Ví dụ: Nguyễn Văn A" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email của bạn (Quan trọng):</label>
+                        <input type="email" id="email" name="email" placeholder="Ví dụ: email@congty.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Chủ đề:</label>
+                        <input type="text" id="subject" name="subject" placeholder="Ví dụ: Hợp tác dự án mới" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Nội dung tin nhắn:</label>
+                        <textarea id="message" name="message" placeholder="Chi tiết tin nhắn của bạn..." rows="8" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Gửi Tin Nhắn</button>
+                </form>
+                
+                <p id="message-status" class="form-status"></p> 
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Huỳnh Minh Thắng. All rights reserved.</p>
+    </footer>
+
+    <script src="js/scroll.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
